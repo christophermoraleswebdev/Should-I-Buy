@@ -1,5 +1,5 @@
 # Should-I-Buy
-![Should I Buy] (/Users/christophermorales/Desktop/GA/SEIR0508/projects/Should-I-Buy/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg)
+![Should I Buy] (tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg)
 ## About
 Embark on an exhilarating journey into the realm of homeownership! While we all know that purchasing a home can be a daunting task, let me introduce you to a revolutionary solution that will make the process a thrilling breeze. Imagine having the power to conquer it all right at your fingertips!
 
