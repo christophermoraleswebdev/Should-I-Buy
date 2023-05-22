@@ -4,34 +4,85 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/b8d3962bdb.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="style.css">
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
       <script defer src="script.js"></script>
       <title>Should I Buy</title>
 </head>
+<header>
+      <nav>
+            <div class="navbar">
+                  <div class="navbar-logo">
+                    CAMM
+                  </div>
+                  <div class="navbar-title">
+                    <h1>Should I Buy</h1>
+                  </div>
+                  <div class="navbar-signup">
+                    <a href="#">Sign Up</a>
+                  </div>
+            </div>
+      </nav>
+</header>
 <body>
       <section class="search">
-            <input type="text" id="textInput">
+            <input type="text" id="textInput" placeholder="Enter Address...">
             <button id="searchBtn" type="submit">Search</button>
       </section>
       <section class="homeEstimate">
-            <h1 id="homeEstimate"></h1>
+            <h2 id="homeEstimate"></h2>
       </section>
       <section class="photo">
             <img id="photo">
       </section>
       <section class="description">
+            <h2 id="descriptionHeader"></h2>
             <p id="description"></p>
       </section>
+      <h2 id="homeSpecs"></h2>
       <section class="homeDetails">
-            <p id="yearBuilt"></p>
-            <p id="bedrooms"></p>
-            <p id="bathrooms"></p>
-            <p id="homeType"></p>
-            <p id="livingArea"></p>
-            <p id="rentEstimate"></p>
+            <div class="table-container">
+                  <table id="table1" class="hidden">
+                    <tr>
+                      <th>Year Built</th>
+                      <th>Bedrooms</th>
+                      <th>Bathrooms</th>
+                    </tr>
+                    <tr>
+                      <td id="yearBuilt"></td>
+                      <td id="bedrooms"></td>
+                      <td id="bathrooms"></td>
+                    </tr>
+                  </table>
+                
+                  <div class="gap"></div>
+                
+                  <table id="table2" class="hidden">
+                    <tr>
+                      <th>Living Area</th>
+                      <th>Rent Estimate</th>
+                      <th>Home Type</th>
+                    </tr>
+                    <tr>
+                      <td id="livingArea"></td>
+                      <td id="rentEstimate"></td>
+                      <td id="homeType"></td>
+                    </tr>
+                  </table>
+            </div>                                     
       </section>
-      
 </body>
+<footer>
+      <div class="footerIcons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-xl"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-xl"></i></a>
+            <a href="https://www.linkedin.com/home" target="_blank"><i class="fab fa-linkedin fa-xl"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-xl"></i></a>
+      </div>
+      <div class="footerText">
+            &copy; CAMM Contracting Services LLC
+      </div>
+</footer>
 </html>
