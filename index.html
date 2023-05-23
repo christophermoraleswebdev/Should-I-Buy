@@ -11,6 +11,7 @@
       <script defer src="script.js"></script>
       <title>Should I Buy</title>
 </head>
+<!-- Navbar -->
 <header>
       <nav>
             <div class="navbar">
@@ -21,11 +22,28 @@
                     <h1>Should I Buy</h1>
                   </div>
                   <div class="navbar-signup">
-                    <a href="#">Sign Up</a>
+                        <button id="loginBtn">Login</button>
+                  </div>
+                  <div id="modal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <br>
+                          <h2>Login</h2>
+                          <form id="loginForm">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required>
+                    
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+                    
+                            <button type="submit">Login</button>
+                          </form>
+                        </div>
                   </div>
             </div>
       </nav>
 </header>
+<!-- Body  -->
 <body>
       <section class="search">
             <input type="text" id="textInput" placeholder="Enter Address...">
@@ -73,7 +91,31 @@
                   </table>
             </div>                                     
       </section>
+      <section class="contactUs">
+            <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                  <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  </div>
+
+                  <button type="submit">Submit</button>
+            </form>
+            </div>
+      </section>
 </body>
+<!-- Footer -->
 <footer>
       <div class="footerIcons">
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-xl"></i></a>

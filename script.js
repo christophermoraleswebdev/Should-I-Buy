@@ -97,3 +97,31 @@ searchBtn.addEventListener('click', () => {
 
 async function getData() {
 }
+
+// Modal 
+let modal = document.getElementById('modal');
+let loginBtn = document.getElementById('loginBtn');
+let closeBtn = document.getElementsByClassName('close')[0];
+
+loginBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+let loginForm = document.getElementById('loginForm');
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let username = document.getElementById('username').value;
+  let password = document.getElementById('password').value;
+  console.log('Username: ' + username);
+  console.log('Password: ' + password);
+});
