@@ -26,8 +26,6 @@ const getData = async () =>  {
       // Home Description
       let description = document.querySelector('#description')
       description.innerHTML = response.data.description 
-      // zpid 
-      let zpid = response.data.zpid
       // Year Built
       let yearBuilt = document.querySelector('#yearBuilt')
       yearBuilt.innerHTML = response.data.yearBuilt
@@ -52,6 +50,8 @@ const getData = async () =>  {
       // Home Details
       let homeSpecs = document.querySelector('#homeSpecs')
       homeSpecs.innerHTML = 'Details'
+      // zpid 
+      let zpid = response.data.zpid
 
 
       console.log(response)
@@ -122,6 +122,6 @@ loginForm.addEventListener('submit', (event) => {
   event.preventDefault();
   let username = document.getElementById('username').value;
   let password = document.getElementById('password').value;
-  console.log('Username: ' + username);
-  console.log('Password: ' + password);
+  console.log(username);
+  console.log(password);
 });
