@@ -1,5 +1,4 @@
 console.log('working')
-
 const button = document.querySelector('#searchBtn')
 
 button.addEventListener('click', async () => {
