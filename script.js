@@ -13,7 +13,7 @@ const getData = async () =>  {
           location: `${textInput}`
         },
         headers: {
-          'X-RapidAPI-Key': 'afd8077af2msh09d13972bce6aa3p1170ebjsn8108ead9892c',
+          'X-RapidAPI-Key': '9479cd5ab7msh9fc0b62ed68c62ep18888djsnfe9dcf40b526',
           'X-RapidAPI-Host': 'zillow56.p.rapidapi.com'
         }
       };
@@ -51,8 +51,6 @@ const getData = async () =>  {
       homeSpecs.innerHTML = 'Details'
       // zpid 
       let zpid = response.data.zpid
-
-
       console.log(response)
 
 
@@ -62,7 +60,7 @@ const getData = async () =>  {
         url: 'https://zillow56.p.rapidapi.com/photos',
         params: {zpid: `${zpid}`},
         headers: {
-          'X-RapidAPI-Key': 'afd8077af2msh09d13972bce6aa3p1170ebjsn8108ead9892c',
+          'X-RapidAPI-Key': '9479cd5ab7msh9fc0b62ed68c62ep18888djsnfe9dcf40b526',
           'X-RapidAPI-Host': 'zillow56.p.rapidapi.com'
         }
       };
